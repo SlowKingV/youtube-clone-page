@@ -14,6 +14,7 @@ i {
 /*------------------------------------------------------
                NAVBAR
 ------------------------------------------------------*/
+.content {width: 100%;}
 
 nav {
   display: flex;
@@ -58,4 +59,55 @@ nav {
 .search button {
   width: 65px;
   margin-left: -5px;
+}
+
+
+/*------------------------------------------------------
+               EMBEDED VIDEO
+------------------------------------------------------*/
+
+#video-cont {
+  width: 100%;
+  padding-top: 100px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.main-video {
+  text-align: center;
+  flex: 3 1 560px;
+  padding: 4em 1em;
+}
+
+#video-info {
+  text-align: left;
+}
+
+.description {
+  text-align: left;
+  width: inherit;
+}
+
+aside {
+  flex: 1 1 200px;
+}
+
+aside > ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside > ul > li {
+  display: block;
+}
+
+aside > ul > li > div {
+  width: 50%;
+  float: right;
+  font-size: 0.7em;
+}
+
+aside .thumbnail {
+  width: 45%;
+  flex: 1 0 auto;
 }
