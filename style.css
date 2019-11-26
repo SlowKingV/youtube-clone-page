@@ -24,12 +24,16 @@ nav {
   overflow: hidden;
   padding: 5px 30px 5px 30px;
   position: fixed;
-  background: rgba(255, 255, 255, 0, 96);
+  background: white;
   width: 96%;
+  top: 0;
 }
 
-.image-logo {
+.img-logo {
   height: 40px;
+  position: relative;
+  top: 10px;
+  padding-left: 10px;
 }
 
 .ico img {
@@ -48,19 +52,19 @@ nav {
 .search-bar {
   text-align: center;
   padding-top: 10px;
-  width: 70px;
+  width: 400px;
   display: inline-block;
 }
 
-.search input {
+.search-bar input {
   padding-right: 0;
   margin-right: 0;
   width: 70%;
 }
 
-.search button {
-  width: 70px;
-  margin-left: -4px;
+.search-bar button {
+  width: 65px;
+  margin-left: -5px;
 }
 
 /*------------------------------------------------------
