@@ -1,2 +1,2 @@
 # youtube-clone-page
-Basic html and css
+This is a simple website built on HTML and CSS displaying YouTube clone as a team project from Microverse.
