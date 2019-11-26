@@ -36,6 +36,11 @@ nav {
   padding-left: 10px;
 }
 
+.ico {
+  display: flex;
+  align-items: center;
+}
+
 .ico img {
   height: 40px;
 }
@@ -52,17 +57,19 @@ nav {
 .search-bar {
   text-align: center;
   padding-top: 10px;
-  width: 400px;
+  width: 600px;
   display: inline-block;
 }
 
 .search-bar input {
+  height: 95%;
   padding-right: 0;
   margin-right: 0;
   width: 70%;
 }
 
 .search-bar button {
+  height: 100%;
   width: 65px;
   margin-left: -5px;
 }
@@ -81,17 +88,92 @@ nav {
 .main-video {
   text-align: center;
   flex: 3 1 560px;
-  padding: 4em 1em;
+  padding: 2em 1em;
 }
 
 #video-info {
   text-align: left;
 }
 
+#video-info > .below-video {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+#video-info > div > label {
+  float: right;
+  color: #909090;
+}
+
+#video-info .video-icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3em;
+  border-top: solid 1px #909090;
+}
+
+#video-info .video-icons > div i {
+  padding: 5px 5px;
+}
+
+#video-info .video-icons > div i > span {
+  font-size: 0.7em;
+  font-family: monospace;
+  font-weight: normal;
+}
+
+.user-info {
+  display: flex;
+}
+
+.user-pic {
+  width: 70px;
+  height: 70px;
+}
+
+.user-info > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.user-info > div > div {
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px #909090 inset;
+}
+
+.user-info button {
+  background-color: #ee3333;
+  border-style: none;
+  padding: 5px;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.user-info button i {
+  color: #ffffff !important;
+}
+
 .description {
   text-align: left;
   width: inherit;
+  font-size: 0.8em;
 }
+
+.comments {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #909090;
+}
+
+/*------------------------------------------------------
+               ASIDE VIDEOS BAR
+------------------------------------------------------*/
 
 aside {
   flex: 1 1 200px;
@@ -115,4 +197,29 @@ aside > ul > li > div {
 aside .thumbnail {
   width: 45%;
   flex: 1 0 auto;
+}
+
+
+.show-more {
+  text-align: center;
+  display: block;
+  padding: 2px;
+  box-shadow: 0 1px 0 0 #909090 inset;
+  color: #909090;
+  font-size: 0.7em;
+}
+
+.up-next {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+}
+
+.up-next form > label {
+  color: #909090;
+}
+
+.up-next i {
+  padding-left: 0.5em;
+  color: #7777ff !important;
 }

@@ -19,7 +19,7 @@
           />
         </div>
         <div class="search-bar">
-          <input type="text" placeholder="search" />
+          <input type="text" placeholder="Search" />
           <button type="button" name="button">
             <i class="fas fa-search"></i>
           </button>
@@ -38,26 +38,34 @@
 
       <section id="video-cont">
         <div class="main-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/8oRjP8yj2Wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="720" height="480" src="https://www.youtube.com/embed/8oRjP8yj2Wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
           <div id="video-info">
-            <h2>Video Title</h2>
-            <div>
+            <h2>What is VCS? (Git-SCM) • Git Basics #1</h2>
+            <div class="below-video">
               <div class="user-info">
-                <img class="user-pic" />
-                <b class="user-name">The Odin Project</b>
-                <button><i class="fab fa-youtube"></i> <b>Subscribe</b></button>
-                <label>799</label>
+                <img src="https://yt3.ggpht.com/a/AGF-l7_gYj8aaqXkkS8JDFC4bzX4EUU7vzdKnQdLRA=s288-c-k-c0xffffffff-no-rj-mo" class="user-pic" />
+                <div>
+                  <b class="user-name">The Odin Project</b>
+                  <div>
+                    <button><i class="fab fa-youtube"></i> <b>Subscribe</b></button>
+                    <label>799</label>
+                  </div>
+                </div>
               </div>
               <label for=""><i>50,106</i> views</label>
             </div>
-            <div>
-              <i id="add" class="fas fa-plus"></i>
-              <i id="share" class="fas fa-share"></i>
-              <i id="more" class="fas fa-ellipsis-h"></i>
-              <i id="like" class="fas fa-thumbs-up"></i>
-              <i id="dislike" class="fas fa-thumbs-down"></i>
+            <div class="video-icons">
+              <div class="right">
+                <i id="add" class="fas fa-plus"></i>
+                <i id="share" class="fas fa-share"></i>
+                <i id="more" class="fas fa-ellipsis-h"></i>
+              </div>
+              <div class="left">
+                <i id="like" class="fas fa-thumbs-up"><span> 768</span></i>
+                <i id="dislike" class="fas fa-thumbs-down"><span> 12</span></i>
+              </div>
             </div>
           </div>
 
@@ -75,7 +83,7 @@
               You can find more information about that project at
               http://theodinproject.com.
             </p>
-            <div class="show-more">Show More</div>
+            <div class="show-more">SHOW MORE</div>
           </div>
   
           <div class="comments">
@@ -85,10 +93,12 @@
     
 
         <aside>
-          <label>Up next</label>
-          <form>
-            <label>Autoplay</label><i class="fa"><b>switch</b></i>
-          </form>
+          <div class="up-next">
+            <label>Up next</label>
+            <form>
+              <label>Autoplay</label><i class="fas fa-info-circle"></i><i class="fas fa-toggle-on"></i>
+            </form>
+          </div>
   
           <ul>
             <li class="side-videos">
@@ -137,7 +147,7 @@
             </li>
           </ul>
   
-          <div class="show-more">Show More</div>
+          <div class="show-more">SHOW MORE</div>
         </aside>
       </section>
 
