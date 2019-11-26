@@ -14,7 +14,9 @@ i {
 /*------------------------------------------------------
                NAVBAR
 ------------------------------------------------------*/
-.content {width: 100%;}
+.content {
+  width: 100%;
+}
 
 nav {
   display: flex;
@@ -57,10 +59,9 @@ nav {
 }
 
 .search button {
-  width: 65px;
-  margin-left: -5px;
+  width: 70px;
+  margin-left: -4px;
 }
-
 
 /*------------------------------------------------------
                EMBEDED VIDEO
