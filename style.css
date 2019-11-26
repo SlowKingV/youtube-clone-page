@@ -1,0 +1,61 @@
+/*------------------------------------------------------
+               CCONTENT
+------------------------------------------------------*/
+
+/* Navbar */
+
+html {
+  font: 400 18px Arial;
+}
+i {
+  color: #909090;
+}
+
+/*------------------------------------------------------
+               NAVBAR
+------------------------------------------------------*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 5px 30px 5px 30px;
+  position: fixed;
+  background: rgba(255, 255, 255, 0, 96);
+  width: 96%;
+}
+
+.image-logo {
+  height: 40px;
+}
+
+.ico img {
+  height: 40px;
+}
+
+.logo {
+  padding-left: 5px;
+}
+
+.ico i,
+.nav-user-avatar {
+  padding-left: 10px;
+}
+
+.search-bar {
+  text-align: center;
+  padding-top: 10px;
+  width: 70px;
+  display: inline-block;
+}
+
+.search input {
+  padding-right: 0;
+  margin-right: 0;
+  width: 70%;
+}
+
+.search button {
+  width: 65px;
+  margin-left: -5px;
+}
