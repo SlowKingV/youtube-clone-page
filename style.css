@@ -91,6 +91,10 @@ nav {
   padding: 2em 1em;
 }
 
+.main-video iframe {
+  width: 100%;
+}
+
 #video-info {
   text-align: left;
 }
@@ -102,7 +106,7 @@ nav {
   padding-bottom: 5px;
 }
 
-#video-info > div > label {
+#video-info > div > span {
   float: right;
   color: #909090;
 }
@@ -215,7 +219,7 @@ aside .thumbnail {
   font-size: 1em;
 }
 
-.up-next form > label {
+.up-next form > span {
   color: #909090;
 }
 
