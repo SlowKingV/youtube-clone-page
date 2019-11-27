@@ -45,6 +45,8 @@ nav {
   padding-top: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 180px;
 }
 
 .ico img {
@@ -56,15 +58,10 @@ nav {
   padding-top: 5px;
 }
 
-.ico i,
-.nav-user-avatar {
-  padding-left: 30px;
-}
-
 .search-bar {
   text-align: center;
   padding-top: 10px;
-  width: 600px;
+  width: 50%;
   display: inline-block;
 }
 
@@ -72,7 +69,7 @@ nav {
   height: 34px;
   padding: 0;
   margin-right: 0;
-  width: 70%;
+  width: 80%;
   box-sizing: border-box;
 }
 
@@ -118,6 +115,7 @@ nav {
   left: 0;
   top: 0;
   height: 100%;
+  border: 0;
 }
 
 #video-info {
@@ -139,7 +137,7 @@ nav {
 #video-info .video-icons {
   display: flex;
   justify-content: space-between;
-  font-size: 1.3em;
+  font-size: 1.1em;
   border-top: solid 1px #909090;
 }
 
@@ -196,6 +194,12 @@ nav {
   color: #ffffff !important;
 }
 
+.subscribe > span {
+  font-size: 0.8em;
+  font-family: monospace;
+  color: #666666;
+}
+
 .description {
   text-align: left;
   width: 100%;
@@ -230,7 +234,7 @@ aside > ul > li {
   display: block;
 }
 
-aside > ul > li > span {
+aside > ul > li > article {
   width: 50%;
   float: right;
   font-size: 0.7em;
@@ -242,15 +246,6 @@ aside .thumbnail {
   flex: 1 0 auto;
 }
 
-.show-more {
-  text-align: center;
-  display: block;
-  padding: 2px;
-  box-shadow: 0 1px 0 0 #909090 inset;
-  color: #909090;
-  font-size: 0.7em;
-}
-
 .up-next {
   display: flex;
   justify-content: space-between;
@@ -259,9 +254,27 @@ aside .thumbnail {
 
 .up-next form > span {
   color: #909090;
+  font-size: 0.9em;
 }
 
 .up-next i {
   padding-left: 0.5em;
   color: #7777ff !important;
+}
+
+.up-next i:hover {cursor: pointer;}
+
+.show-more {
+  text-align: center;
+  display: block;
+  padding: 2px;
+  box-shadow: 0 1px 0 0 #909090 inset;
+  color: #909090;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.show-more:hover {
+  cursor: pointer;
+  color: #7777ff;
 }
