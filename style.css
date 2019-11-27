@@ -235,9 +235,22 @@ aside > ul > li {
 }
 
 aside > ul > li > article {
+  display: flex;
+  height: 94px;
+  flex-direction: column;
   width: 50%;
   float: right;
+  text-align: left;
+}
+
+aside > ul > li > article h3 {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+aside > ul > li > article span {
   font-size: 0.7em;
+  color: #909090;
 }
 
 aside .thumbnail {
