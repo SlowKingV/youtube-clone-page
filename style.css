@@ -1,0 +1,292 @@
+/*------------------------------------------------------
+               CCONTENT
+------------------------------------------------------*/
+
+/* Navbar */
+
+html {
+  font: 400 18px Arial;
+}
+i {
+  color: #909090;
+}
+
+/*------------------------------------------------------
+               NAVBAR
+------------------------------------------------------*/
+
+body {background-color: #eeeeee;}
+
+.content {
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0px 30px 10px 30px;
+  position: fixed;
+  background: white;
+  width: 96%;
+  top: 0;
+  z-index: 100;
+}
+
+.img-logo {
+  height: 30px;
+  position: relative;
+  top: 10px;
+  padding-left: 10px;
+}
+
+.ico {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.ico img {
+  height: 40px;
+}
+
+.logo {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.search-bar {
+  text-align: center;
+  padding-top: 10px;
+  width: 50%;
+  display: inline-block;
+}
+
+.search-bar input {
+  height: 34px;
+  padding: 0;
+  margin-right: 0;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.search-bar button {
+  height: 34px;
+  width: 65px;
+  margin-left: -5px;
+  box-sizing: border-box;
+}
+
+/*------------------------------------------------------
+               EMBEDED VIDEO
+------------------------------------------------------*/
+
+#video-cont {
+  max-width: 1420px;
+  width: 100%;
+  padding-top: 100px;
+  display: inline-flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+}
+
+.main-video {
+  width: 65%;
+  text-align: center;
+  flex: 3 1 auto;
+  padding: 2em 1em;
+}
+
+.main-video #inner {
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+#inner iframe, #inner object, #inner embed {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border: 0;
+}
+
+#video-info {
+  text-align: left;
+}
+
+#video-info > .below-video {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+#video-info > div > span {
+  float: right;
+  color: #909090;
+}
+
+#video-info .video-icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+  border-top: solid 1px #909090;
+}
+
+#video-info .video-icons > div i {
+  padding: 5px 5px;
+}
+
+#video-info .video-icons > div span {
+  font-size: 0.7em;
+  font-family: monospace;
+  font-weight: normal;
+  color: #909090;
+}
+
+.user-info {
+  display: flex;
+}
+
+.user-pic {
+  width: 70px;
+  height: 70px;
+}
+
+.user-info > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.user-info > div > div {
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px #909090 inset;
+}
+
+.user-info button {
+  background-color: #ee3333;
+  border-style: none;
+  padding: 5px;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.user-info button:hover {
+  cursor: pointer;
+  background-color: #dd8888;
+}
+
+.user-info button:active {
+  background-color: #909090;
+  color: #ffffff;
+}
+
+.user-info button i {
+  color: #ffffff !important;
+}
+
+.subscribe > span {
+  font-size: 0.8em;
+  font-family: monospace;
+  color: #666666;
+}
+
+.description {
+  text-align: left;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.comments {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #909090;
+}
+
+/*------------------------------------------------------
+               ASIDE VIDEOS BAR
+------------------------------------------------------*/
+
+aside {
+  width: 390px;
+  flex: 1 0 auto;
+  padding: 0 1em;
+}
+
+aside > ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside > ul > li {
+  display: block;
+}
+
+aside > ul > li > article {
+  display: flex;
+  height: 94px;
+  flex-direction: column;
+  width: 50%;
+  float: right;
+  text-align: left;
+}
+
+aside > ul > li > article h3 {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+aside > ul > li > article span {
+  font-size: 0.7em;
+  color: #909090;
+}
+
+aside .thumbnail {
+  width: 168px;
+  height: 94px;
+  flex: 1 0 auto;
+}
+
+.up-next {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+}
+
+.up-next form > span {
+  color: #909090;
+  font-size: 0.9em;
+}
+
+.up-next i {
+  padding-left: 0.5em;
+  color: #7777ff !important;
+}
+
+.up-next i:hover {cursor: pointer;}
+
+.show-more {
+  text-align: center;
+  display: block;
+  padding: 2px;
+  box-shadow: 0 1px 0 0 #909090 inset;
+  color: #909090;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.show-more:hover {
+  cursor: pointer;
+  color: #7777ff;
+}
