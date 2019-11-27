@@ -14,29 +14,35 @@ i {
 /*------------------------------------------------------
                NAVBAR
 ------------------------------------------------------*/
+
+body {background-color: #eeeeee;}
+
 .content {
   width: 100%;
+  text-align: center;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  padding: 0px 30px 15px 30px;
+  padding: 0px 30px 10px 30px;
   position: fixed;
   background: white;
   width: 96%;
   top: 0;
+  z-index: 100;
 }
 
 .img-logo {
-  height: 40px;
+  height: 30px;
   position: relative;
   top: 10px;
   padding-left: 10px;
 }
 
 .ico {
+  padding-top: 10px;
   display: flex;
   align-items: center;
 }
@@ -47,6 +53,7 @@ nav {
 
 .logo {
   padding-left: 5px;
+  padding-top: 5px;
 }
 
 .ico i,
@@ -82,20 +89,35 @@ nav {
 ------------------------------------------------------*/
 
 #video-cont {
+  max-width: 1420px;
   width: 100%;
   padding-top: 100px;
   display: inline-flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: #ffffff;
 }
 
 .main-video {
+  width: 65%;
   text-align: center;
-  flex: 3 1 560px;
+  flex: 3 1 auto;
   padding: 2em 1em;
 }
 
-.main-video iframe {
+.main-video #inner {
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+#inner iframe, #inner object, #inner embed {
   width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
 }
 
 #video-info {
@@ -125,10 +147,11 @@ nav {
   padding: 5px 5px;
 }
 
-#video-info .video-icons > div i > span {
+#video-info .video-icons > div span {
   font-size: 0.7em;
   font-family: monospace;
   font-weight: normal;
+  color: #909090;
 }
 
 .user-info {
@@ -159,13 +182,23 @@ nav {
   color: #ffffff;
 }
 
+.user-info button:hover {
+  cursor: pointer;
+  background-color: #dd8888;
+}
+
+.user-info button:active {
+  background-color: #909090;
+  color: #ffffff;
+}
+
 .user-info button i {
   color: #ffffff !important;
 }
 
 .description {
   text-align: left;
-  width: inherit;
+  width: 100%;
   font-size: 0.8em;
 }
 
@@ -183,7 +216,9 @@ nav {
 ------------------------------------------------------*/
 
 aside {
-  flex: 1 1 200px;
+  width: 390px;
+  flex: 1 0 auto;
+  padding: 0 1em;
 }
 
 aside > ul {
@@ -195,14 +230,15 @@ aside > ul > li {
   display: block;
 }
 
-aside > ul > li > div {
+aside > ul > li > span {
   width: 50%;
   float: right;
   font-size: 0.7em;
 }
 
 aside .thumbnail {
-  width: 45%;
+  width: 168px;
+  height: 94px;
   flex: 1 0 auto;
 }
 
